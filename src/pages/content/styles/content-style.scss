@@ -1,0 +1,257 @@
+.cart-plus {
+  margin-top: 1rem !important;
+}
+.cart-button-conatiner {
+  border-top-left-radius: 20px; /* Adjust the value as needed */
+  border-bottom-left-radius: 20px;
+  padding-bottom: 1rem;
+}
+
+.cart-title {
+  font-size: 0.8rem !important;
+}
+
+.cart-icon {
+  font-size: 35px;
+}
+
+.cart-plus,
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.cart-items {
+  margin-top: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #746969;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 40px;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  background-color: #c34cdb;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
+
+.custom-input,
+.ant-select-selector {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px 7px;
+  color: #333;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    border-color: #c34cdb;
+    box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+  }
+}
+
+:where(.css-dev-only-do-not-override-98ntnt).ant-select-outlined:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #333;
+  &:focus {
+    border-color: #c34cdb;
+    box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+  }
+}
+
+:where(.css-dev-only-do-not-override-98ntnt).ant-select-single {
+  height: 43px !important;
+  &:focus {
+    border-color: #c34cdb;
+    box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+  }
+}
+
+.custom-textarea {
+  background-color: #f9f9f9;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 8px;
+  color: #333;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    border-color: #c34cdb;
+    box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+  }
+}
+
+.custom-select .ant-select-selector {
+  background-color: #f0f0f0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #333;
+
+  &:focus-within {
+    border-color: #c34cdb;
+    box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+  }
+}
+
+.form-title {
+  color: #c34cdb;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.ant-upload {
+  width: 100% !important;
+  bottom {
+    border: none;
+  }
+}
+
+#uploadLogo {
+  border: 1px solid #d9d9d966;
+}
+
+:where(.css-dev-only-do-not-override-98ntnt).ant-input-outlined {
+  border-color: #d9d9d966 !important;
+}
+
+.ant-form-item-label {
+  opacity: 0.8;
+  font-size: 17px;
+}
+
+.ant-drawer-title {
+  flex: unset !important;
+}
+
+.ant-drawer-header-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+:where(.css-dev-only-do-not-override-98ntnt).ant-select-single:checked {
+  border-color: #c34cdb;
+  box-shadow: 0 0 0 2px rgba(195, 76, 219, 0.2);
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  font-size: 13px;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 3px;
+  background-color: #f8f8f8; /* Adjust as needed */
+}
+
+.quantity-icon {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 22px;
+  user-select: none;
+}
+
+.quantity-text {
+  flex: 1;
+  text-align: center;
+  user-select: none;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.cart-item-name {
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  white-space: normal; /* Ensures text wraps normally */
+  overflow-wrap: break-word; /* Ensures long words break and wrap to the next line */
+}
+
+.cart-item-info {
+  display: flex;
+  flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
+  /* Adjusts the gap between items */
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  white-space: normal; /* Ensures text wraps normally */
+  overflow-wrap: break-word; /* Ensures long words break and wrap to the next line */
+}
+
+.cart-item-container {
+  padding: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  &:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+:where(.css-dev-only-do-not-override-98ntnt).ant-modal .ant-modal-header {
+  padding-bottom: 5px !important;
+}
